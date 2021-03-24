@@ -1,0 +1,769 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{nyt/global//global/global}
+  \entry{akaike1973information}{book}{}
+    \name{author}{1}{}{%
+      {{hash=AH}{%
+         family={Akaike},
+         familyi={A\bibinitperiod},
+         given={H},
+         giveni={H},
+      }}%
+    }
+    \strng{namehash}{AH1}
+    \strng{fullhash}{AH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1973}
+    \field{labeldatesource}{}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{booktitle}{Proc. 2nd Int. Symp. on Information Theory}
+    \field{pages}{267\bibrangedash 281}
+    \field{title}{Information theory and an extension of maximum likelihood
+  principle}
+    \field{year}{1973}
+  \endentry
+
+  \entry{angus1994probability}{article}{}
+    \name{author}{1}{}{%
+      {{hash=AJE}{%
+         family={Angus},
+         familyi={A\bibinitperiod},
+         given={John\bibnamedelima E},
+         giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {SIAM}%
+    }
+    \strng{namehash}{AJE1}
+    \strng{fullhash}{AJE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1994}
+    \field{labeldatesource}{}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{number}{4}
+    \field{pages}{652\bibrangedash 654}
+    \field{title}{The probability integral transform and related results}
+    \field{volume}{36}
+    \field{journaltitle}{SIAM review}
+    \field{year}{1994}
+  \endentry
+
+  \entry{blomqvist1950measure}{article}{}
+    \name{author}{1}{}{%
+      {{hash=BN}{%
+         family={Blomqvist},
+         familyi={B\bibinitperiod},
+         given={Nils},
+         giveni={N\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {JSTOR}%
+    }
+    \strng{namehash}{BN1}
+    \strng{fullhash}{BN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1950}
+    \field{labeldatesource}{}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{pages}{593\bibrangedash 600}
+    \field{title}{On a measure of dependence between two random variables}
+    \field{journaltitle}{The Annals of Mathematical Statistics}
+    \field{year}{1950}
+  \endentry
+
+  \entry{breymann2003dependence}{article}{}
+    \name{author}{3}{}{%
+      {{hash=BW}{%
+         family={Breymann},
+         familyi={B\bibinitperiod},
+         given={Wolfgang},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=DA}{%
+         family={Dias},
+         familyi={D\bibinitperiod},
+         given={Alexandra},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=EP}{%
+         family={Embrechts},
+         familyi={E\bibinitperiod},
+         given={Paul},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Taylor \& Francis}%
+    }
+    \strng{namehash}{BWDAEP1}
+    \strng{fullhash}{BWDAEP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2003}
+    \field{labeldatesource}{}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{title}{Dependence structures for multivariate high-frequency data in
+  finance}
+    \field{year}{2003}
+  \endentry
+
+  \entry{clayton1978model}{article}{}
+    \name{author}{1}{}{%
+      {{hash=CDG}{%
+         family={Clayton},
+         familyi={C\bibinitperiod},
+         given={David\bibnamedelima G},
+         giveni={D\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Oxford University Press}%
+    }
+    \strng{namehash}{CDG1}
+    \strng{fullhash}{CDG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1978}
+    \field{labeldatesource}{}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{number}{1}
+    \field{pages}{141\bibrangedash 151}
+    \field{title}{A model for association in bivariate life tables and its
+  application in epidemiological studies of familial tendency in chronic
+  disease incidence}
+    \field{volume}{65}
+    \field{journaltitle}{Biometrika}
+    \field{year}{1978}
+  \endentry
+
+  \entry{demarta2005t}{article}{}
+    \name{author}{2}{}{%
+      {{hash=DS}{%
+         family={Demarta},
+         familyi={D\bibinitperiod},
+         given={Stefano},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=MAJ}{%
+         family={McNeil},
+         familyi={M\bibinitperiod},
+         given={Alexander\bibnamedelima J},
+         giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wiley Online Library}%
+    }
+    \strng{namehash}{DSMAJ1}
+    \strng{fullhash}{DSMAJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2005}
+    \field{labeldatesource}{}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{number}{1}
+    \field{pages}{111\bibrangedash 129}
+    \field{title}{The t copula and related copulas}
+    \field{volume}{73}
+    \field{journaltitle}{International statistical review}
+    \field{year}{2005}
+  \endentry
+
+  \entry{durante2013topological}{article}{}
+    \name{author}{3}{}{%
+      {{hash=DF}{%
+         family={Durante},
+         familyi={D\bibinitperiod},
+         given={Fabrizio},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=FSJ}{%
+         family={Fernandez-Sanchez},
+         familyi={F\bibinithyphendelim S\bibinitperiod},
+         given={Juan},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=SC}{%
+         family={Sempi},
+         familyi={S\bibinitperiod},
+         given={Carlo},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{DFFSJSC1}
+    \strng{fullhash}{DFFSJSC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2013}
+    \field{labeldatesource}{}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{number}{9}
+    \field{pages}{945\bibrangedash 948}
+    \field{title}{A topological proof of Sklar’s theorem}
+    \field{volume}{26}
+    \field{journaltitle}{Applied Mathematics Letters}
+    \field{year}{2013}
+  \endentry
+
+  \entry{genest2013copula}{article}{}
+    \name{author}{3}{}{%
+      {{hash=GC}{%
+         family={Genest},
+         familyi={G\bibinitperiod},
+         given={Christian},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=CAA}{%
+         family={Carabar{\'\i}n-Aguirre},
+         familyi={C\bibinithyphendelim A\bibinitperiod},
+         given={Alberto},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=HF}{%
+         family={Harvey},
+         familyi={H\bibinitperiod},
+         given={Fanny},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GCCAAHF1}
+    \strng{fullhash}{GCCAAHF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2013}
+    \field{labeldatesource}{}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{number}{1}
+    \field{pages}{5\bibrangedash 24}
+    \field{title}{Copula parameter estimation using Blomqvist’s beta}
+    \field{volume}{154}
+    \field{journaltitle}{Journal de la Soci{\'e}t{\'e} Fran{\c{c}}aise de
+  Statistique}
+    \field{year}{2013}
+  \endentry
+
+  \entry{genest1995semiparametric}{article}{}
+    \name{author}{3}{}{%
+      {{hash=GC}{%
+         family={Genest},
+         familyi={G\bibinitperiod},
+         given={Christian},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=GK}{%
+         family={Ghoudi},
+         familyi={G\bibinitperiod},
+         given={Kilani},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=RLP}{%
+         family={Rivest},
+         familyi={R\bibinitperiod},
+         given={L-P},
+         giveni={L\bibinithyphendelim P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Oxford University Press}%
+    }
+    \strng{namehash}{GCGKRLP1}
+    \strng{fullhash}{GCGKRLP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1995}
+    \field{labeldatesource}{}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{number}{3}
+    \field{pages}{543\bibrangedash 552}
+    \field{title}{A semiparametric estimation procedure of dependence
+  parameters in multivariate families of distributions}
+    \field{volume}{82}
+    \field{journaltitle}{Biometrika}
+    \field{year}{1995}
+  \endentry
+
+  \entry{genest1993statistical}{article}{}
+    \name{author}{2}{}{%
+      {{hash=GC}{%
+         family={Genest},
+         familyi={G\bibinitperiod},
+         given={Christian},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=RLP}{%
+         family={Rivest},
+         familyi={R\bibinitperiod},
+         given={Louis-Paul},
+         giveni={L\bibinithyphendelim P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Taylor \& Francis}%
+    }
+    \strng{namehash}{GCRLP1}
+    \strng{fullhash}{GCRLP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1993}
+    \field{labeldatesource}{}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{number}{423}
+    \field{pages}{1034\bibrangedash 1043}
+    \field{title}{Statistical inference procedures for bivariate Archimedean
+  copulas}
+    \field{volume}{88}
+    \field{journaltitle}{Journal of the American statistical Association}
+    \field{year}{1993}
+  \endentry
+
+  \entry{kendall1938new}{article}{}
+    \name{author}{1}{}{%
+      {{hash=KMG}{%
+         family={Kendall},
+         familyi={K\bibinitperiod},
+         given={Maurice\bibnamedelima G},
+         giveni={M\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {JSTOR}%
+    }
+    \strng{namehash}{KMG1}
+    \strng{fullhash}{KMG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1938}
+    \field{labeldatesource}{}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{number}{1/2}
+    \field{pages}{81\bibrangedash 93}
+    \field{title}{A new measure of rank correlation}
+    \field{volume}{30}
+    \field{journaltitle}{Biometrika}
+    \field{year}{1938}
+  \endentry
+
+  \entry{kim2007comparison}{article}{}
+    \name{author}{3}{}{%
+      {{hash=KG}{%
+         family={Kim},
+         familyi={K\bibinitperiod},
+         given={Gunky},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=SMJ}{%
+         family={Silvapulle},
+         familyi={S\bibinitperiod},
+         given={Mervyn\bibnamedelima J},
+         giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=SP}{%
+         family={Silvapulle},
+         familyi={S\bibinitperiod},
+         given={Paramsothy},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{KGSMJSP1}
+    \strng{fullhash}{KGSMJSP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2007}
+    \field{labeldatesource}{}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{number}{6}
+    \field{pages}{2836\bibrangedash 2850}
+    \field{title}{Comparison of semiparametric and parametric methods for
+  estimating copulas}
+    \field{volume}{51}
+    \field{journaltitle}{Computational Statistics \& Data Analysis}
+    \field{year}{2007}
+  \endentry
+
+  \entry{kojadinovic2010comparison}{article}{}
+    \name{author}{2}{}{%
+      {{hash=KI}{%
+         family={Kojadinovic},
+         familyi={K\bibinitperiod},
+         given={Ivan},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=YJ}{%
+         family={Yan},
+         familyi={Y\bibinitperiod},
+         given={Jun},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{KIYJ1}
+    \strng{fullhash}{KIYJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2010}
+    \field{labeldatesource}{}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{number}{1}
+    \field{pages}{52\bibrangedash 63}
+    \field{title}{Comparison of three semiparametric methods for estimating
+  dependence parameters in copula models}
+    \field{volume}{47}
+    \field{journaltitle}{Insurance: Mathematics and Economics}
+    \field{year}{2010}
+  \endentry
+
+  \entry{lucas2014conditional}{article}{}
+    \name{author}{3}{}{%
+      {{hash=LA}{%
+         family={Lucas},
+         familyi={L\bibinitperiod},
+         given={Andr{\'e}},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=SB}{%
+         family={Schwaab},
+         familyi={S\bibinitperiod},
+         given={Bernd},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=ZX}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Xin},
+         giveni={X\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Taylor \& Francis}%
+    }
+    \strng{namehash}{LASBZX1}
+    \strng{fullhash}{LASBZX1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2014}
+    \field{labeldatesource}{}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{number}{2}
+    \field{pages}{271\bibrangedash 284}
+    \field{title}{Conditional euro area sovereign default risk}
+    \field{volume}{32}
+    \field{journaltitle}{Journal of Business \& Economic Statistics}
+    \field{year}{2014}
+  \endentry
+
+  \entry{malouf2002comparison}{book}{}
+    \name{author}{1}{}{%
+      {{hash=MR}{%
+         family={Malouf},
+         familyi={M\bibinitperiod},
+         given={Robert},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MR1}
+    \strng{fullhash}{MR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2002}
+    \field{labeldatesource}{}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{booktitle}{COLING-02: The 6th Conference on Natural Language
+  Learning 2002 (CoNLL-2002)}
+    \field{title}{A comparison of algorithms for maximum entropy parameter
+  estimation}
+    \field{year}{2002}
+  \endentry
+
+  \entry{mashal2003dependence}{article}{}
+    \name{author}{3}{}{%
+      {{hash=MR}{%
+         family={Mashal},
+         familyi={M\bibinitperiod},
+         given={Roy},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=NM}{%
+         family={Naldi},
+         familyi={N\bibinitperiod},
+         given={Marco},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=ZA}{%
+         family={Zeevi},
+         familyi={Z\bibinitperiod},
+         given={Assaf},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {RISK MAGAZINE LIMITED}%
+    }
+    \strng{namehash}{MRNMZA1}
+    \strng{fullhash}{MRNMZA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2003}
+    \field{labeldatesource}{}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{number}{10}
+    \field{pages}{83\bibrangedash 88}
+    \field{title}{On the dependence of equity and asset returns}
+    \field{volume}{16}
+    \field{journaltitle}{RISK-LONDON-RISK MAGAZINE LIMITED-}
+    \field{year}{2003}
+  \endentry
+
+  \entry{mcneil2015quantitative}{book}{}
+    \name{author}{3}{}{%
+      {{hash=MAJ}{%
+         family={McNeil},
+         familyi={M\bibinitperiod},
+         given={Alexander\bibnamedelima J},
+         giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=FR}{%
+         family={Frey},
+         familyi={F\bibinitperiod},
+         given={R{\"u}diger},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=EP}{%
+         family={Embrechts},
+         familyi={E\bibinitperiod},
+         given={Paul},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Princeton university press}%
+    }
+    \strng{namehash}{MAJFREP1}
+    \strng{fullhash}{MAJFREP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2015}
+    \field{labeldatesource}{}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{title}{Quantitative risk management: concepts, techniques and
+  tools-revised edition}
+    \field{year}{2015}
+  \endentry
+
+  \entry{mcneil2009multivariate}{article}{}
+    \true{moreauthor}
+    \true{morelabelname}
+    \name{author}{2}{}{%
+      {{hash=MAJ}{%
+         family={McNeil},
+         familyi={M\bibinitperiod},
+         given={Alexander\bibnamedelima J},
+         giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=NJ}{%
+         family={Ne{\v{s}}lehov{\'a}},
+         familyi={N\bibinitperiod},
+         given={Johanna},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Institute of Mathematical Statistics}%
+    }
+    \strng{namehash}{MAJNJ+1}
+    \strng{fullhash}{MAJNJ+1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2009}
+    \field{labeldatesource}{}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{number}{5B}
+    \field{pages}{3059\bibrangedash 3097}
+    \field{title}{Multivariate Archimedean copulas, d-monotone functions and
+  L1-norm symmetric distributions}
+    \field{volume}{37}
+    \field{journaltitle}{The Annals of Statistics}
+    \field{year}{2009}
+  \endentry
+
+  \entry{nelsen2007introduction}{book}{}
+    \name{author}{1}{}{%
+      {{hash=NRB}{%
+         family={Nelsen},
+         familyi={N\bibinitperiod},
+         given={Roger\bibnamedelima B},
+         giveni={R\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer Science \& Business Media}%
+    }
+    \strng{namehash}{NRB1}
+    \strng{fullhash}{NRB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2007}
+    \field{labeldatesource}{}
+    \field{sortinit}{N}
+    \field{sortinithash}{N}
+    \field{title}{An introduction to copulas}
+    \field{year}{2007}
+  \endentry
+
+  \entry{oakes1994multivariate}{article}{}
+    \name{author}{1}{}{%
+      {{hash=OD}{%
+         family={Oakes},
+         familyi={O\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{2}{%
+      {Gordon}%
+      {Breach Science Publishers}%
+    }
+    \strng{namehash}{OD1}
+    \strng{fullhash}{OD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1994}
+    \field{labeldatesource}{}
+    \field{sortinit}{O}
+    \field{sortinithash}{O}
+    \field{number}{3-4}
+    \field{pages}{343\bibrangedash 354}
+    \field{title}{Multivariate survival distributions}
+    \field{volume}{3}
+    \field{journaltitle}{Journaltitle of Nonparametric Statistics}
+    \field{year}{1994}
+  \endentry
+
+  \entry{salmon2012formula}{article}{}
+    \name{author}{1}{}{%
+      {{hash=SF}{%
+         family={Salmon},
+         familyi={S\bibinitperiod},
+         given={Felix},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wiley Online Library}%
+    }
+    \strng{namehash}{SF1}
+    \strng{fullhash}{SF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2012}
+    \field{labeldatesource}{}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{number}{1}
+    \field{pages}{16\bibrangedash 20}
+    \field{title}{The formula that killed Wall Street}
+    \field{volume}{9}
+    \field{journaltitle}{Significance}
+    \field{year}{2012}
+  \endentry
+
+  \entry{sklar1959}{article}{}
+    \name{author}{1}{}{%
+      {{hash=SA}{%
+         family={Sklar},
+         familyi={S\bibinitperiod},
+         given={Abe},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SA1}
+    \strng{fullhash}{SA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1959}
+    \field{labeldatesource}{}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{pages}{229\bibrangedash 231}
+    \field{title}{Fonctions de répartition à n dimensions et leurs marges}
+    \field{volume}{8}
+    \field{journaltitle}{Publ. inst. statist. univ. Paris}
+    \field{year}{1959}
+  \endentry
+
+  \entry{weiss2011copula}{article}{}
+    \name{author}{1}{}{%
+      {{hash=WG}{%
+         family={Wei{\ss}},
+         familyi={W\bibinitperiod},
+         given={Gregor},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{WG1}
+    \strng{fullhash}{WG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2011}
+    \field{labeldatesource}{}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{number}{1}
+    \field{pages}{31\bibrangedash 54}
+    \field{title}{Copula parameter estimation by maximum-likelihood and
+  minimum-distance estimators: a simulation study}
+    \field{volume}{26}
+    \field{journaltitle}{Computational Statistics}
+    \field{year}{2011}
+  \endentry
+\enddatalist
+\endinput

@@ -1,0 +1,178 @@
+
+\chapter{Copula selection and parameter estimation} 
+
+\label{Chapter2}
+
+%----------------------------------------------------------------------------------------
+%	SECTION 1
+%----------------------------------------------------------------------------------------
+
+\section{Estimation methods}
+\label{est-methods}
+
+The simulation in this article uses three different estimators to select and parameterize bivariate copulae. The first one will be the classical maximum likelihood estimator, while the last  two are the inverses of the just presented moment-based functions, Kendall's Tau and Blomqvist's Beta. A similar study just for the parameter estimation process has already been done by \citet{genest2013copula}, finding that the ML-estimator is the most precise in every application, yet it is slower. This is congruent to other studies comparing maximum likelihood to several other estimators, for example \citet{weiss2011copula}.
+
+The following section details how the just presented estimators operate and how the estimation process will take place. In a first step I will present how the parameter describing a copula distribution is estimated given that the true copula is known, and in a second step I will use a selection criterion in combination with the parameter to select the best copula out of a range. For this step I suppose that the true copula is not known.
+
+\subsection{Maximum likelihood}
+
+At the beginning of a bivariate estimation process one needs to specify the marginal distributions of the available data. Suppose an i.i.d sample of bivariate data $\left\lbrace x_{i1},x_{i2}\right\rbrace$ for $i = 1,\dots , n$. If the marginal distribution is known the copula data can be directly obtained using the probability integral transform
+
+\begin{equation}
+	\label{known-margins}
+	\left(u_{i 1}, u_{i 2}\right):=\left(F_{1}\left(x_{i 1}\right), F_{2}\left(x_{i 2}\right)\right) \text {\qquad for } i=1, \ldots, n .
+\end{equation}
+
+In real-world data applications, however, margins are rarely known, so \citet{oakes1994multivariate} suggested replacing them with their empirical versions
+
+\begin{equation}
+	\label{emp-margins}
+	\hat{F_j}(x_j)=\frac{1}{n+1} \sum_{i=1}^{n} \mathbf{1}_{\left(x_{ij} \leq x_j\right)} \text{\qquad for } j = \left\lbrace 1,2 \right\rbrace ,
+\end{equation}
+%
+with $\mathbf{1}_{(E)}$ being the indicator function for event $E$. To avoid boundary problems in further calculations as $\hat{F}(x_{nj}) \approx 1$, it is convenient to use the re-scaled version of \citet{genest1995semiparametric} which you see in the equation above. Here, the factor $\frac{1}{n+1}$ replaces the problematic $\frac{1}{n}$ in the old version.
+
+The generated observations using the empirical margins are called \textit{pseudo observations} and for $n \rightarrow \infty$ the empirical margin estimator converges towards the real marginal distribution. However, even if misspecified marginal distributions are used, the overall effect on model validity is insignificant as long as the margin of error does not grow too large \citep{kim2007comparison}.
+
+To estimate parameters via maximum likelihood we require the copula to be an element of all parameterized copulae $C \in (C_\theta)$ and the parameter $\theta$ to be real valued. If the copula for the observations $\left\lbrace x_{i1},x_{i2}\right\rbrace$ has a density for all $u_1,u_2 \in (0,1)$ given by 
+
+\begin{equation*}
+	c_{\theta}(u_1, u_2)=\frac{\partial^{2}}{\partial u_1 \partial u_2} C_{\theta}(u_1, u_2),
+\end{equation*}
+%
+the log-likelihood function for $\theta$, given known margins is defined as
+
+\begin{equation}
+	\ell(\theta)=\sum_{i=1}^{n} \log \left[c_{\theta}\left\{F_1\left(x_{i1}\right), F_2\left(x_{i2}\right)\right\}\right].
+\end{equation}
+
+In the more practical case of unknown margins, they are, as mentioned above, replaced by their empirical versions to yield 
+
+\begin{equation}
+	\ell(\theta)=\sum_{i=1}^{n} \log \left[c_{\theta}\left\{\hat{F}_1\left(x_{i1}\right), \hat{F}_2\left(x_{i2}\right)\right\}\right],
+\end{equation}
+%
+where
+
+\begin{equation}
+	\label{ml-estimation}
+	\hat{\theta}_{n}^{M L}(u_1,u_2) \equiv \underset{\theta \in \Theta}{\arg \max } \ell (\theta).
+\end{equation}
+
+As \citet{genest1995semiparametric} showed, the maximum likelihood estimator is consistent and asymptotically normal under regularity conditions.
+
+\subsection{Inverse of Kendall's Tau}
+
+Following equation \ref{tau-copula} there is a direct connection between the copula distribution and the Kendall rank correlation coefficient. For the inversion method we choose a copula family that has an explicit relationship between its parameter $\theta$ (or $\rho$ for elliptical copulae) and Kendall's $\tau$ such that
+
+\begin{equation*}
+	\tau = \delta (\theta), 
+\end{equation*}
+%
+with $\delta (\cdot)$ being the respective copula-tau relationship function calculated from \ref{tau-copula}. From this we can directly derive an estimator for $\theta$ by inverting the relationship function and using the empirical version of $\tau$ as its argument, yielding
+
+\begin{equation}
+	\hat{\theta}_\tau := \delta^{-1}(\hat{\tau}). 
+\end{equation}
+
+For the copulae introduced in Chapter \ref{Chapter1} the relationship function and their inverses can be found in Table \ref{iTau-rel-funcs}.
+
+\begin{table}
+	
+	\centering
+{\renewcommand{\arraystretch}{1.4}
+\begin{tabular}{c|l|l}
+	\hline
+	Copula family & $\delta(\theta)$ or $\delta(\rho)$ & $\delta^{-1}(\hat{\tau})$ \\
+	\hline
+	\hline
+	Gaussian & $\tau=\frac{2}{\pi} \arcsin (\rho)$ & $\hat{\theta}_\tau =\sin(\hat{\tau}\frac{\pi}{2})$ \\
+	\hline
+	Students \textit{t}& $\tau=\frac{2}{\pi} \arcsin (\rho)$ & $\hat{\theta}_\tau =\sin(\hat{\tau}\frac{\pi}{2})$ \\
+	\hline
+	Clayton & $\tau = \frac{\theta}{\theta + 2}$ & $\hat{\theta}_\tau =2\frac{\hat{\tau}}{1-\hat{\tau}}$ \\
+	\hline
+	Gumbel & $\tau = 1-\frac{1}{\theta}$ & $\hat{\theta}_\tau =\frac{1}{1-\hat{\tau}}$ \\
+	\hline
+	Frank & $\tau = 1- \frac{4}{\theta}+4\frac{D_1(\theta)}{\theta}$ with & no closed  \\
+	& $D_{1}(\theta)=\int_{0}^{\theta} \frac{x / \theta}{e^{x}-1} d x$ & form expression \\
+\end{tabular}
+}
+	\caption[Relationship functions and inverses for the inversion of Kendall's Tau]{Relationship functions for selected copulae and their inverses. For the Gaussian and t-copula, the dependence parameter is called $\rho$ and will, therefore be the argument of its function.}
+	\label{iTau-rel-funcs}
+\end{table}
+
+\subsection{Inverse of Blomqvist's Beta}
+
+As with the inversion of Kendall's Tau there also exists a direct connection between the copula parameter $\theta$ or $\rho$ and Blomqvist's Beta via equation \ref{beta-copula}. The major difference between $\beta$-inversion and $\tau$-inversion is the algorithmic complexity. While the first has a linear complexity of $\mathcal{O}(n)$, the latter has quadratic complexity $\mathcal{O}(n^2)$ (\cite[see][]{genest2013copula}) and is thus computationally more challenging.
+
+To derive an estimator for Blomqvist's Beta, the same process is used as for the inversion of Kendall's Tau. At first, a one to one relation of the form 
+
+\begin{equation*}
+	\beta = \varrho (\theta), 
+\end{equation*}
+%
+is used to then find an inverse that acts as an estimator for the copula parameter given an estimate of Blomqvist's Beta
+
+\begin{equation}
+	\hat{\theta}_\beta := \varrho^{-1}(\hat{\beta}). 
+\end{equation}
+
+As above I will provide a table with all relationship functions and their respective inverses used in this simulation study i.e. Table \ref{iBeta-rel-funcs}. Notice that for the Gumbel estimator $\hat{\theta}_\beta$ there is no analytic inverse for the complete range of $\hat{\beta} \in\left[-1,1 \right] $ so I use a pseudo-inverse which is only well defined for $\hat{\beta} \in\left[0,1 \right)$. For the implementation of this simulation the pseudo-inverse can be used without problems as only positive dependencies and, thus, parameters are estimated. The inverse relationship functions which do not have closed form expressions will be inverted numerically.
+\begin{table}
+
+	\centering
+	{\renewcommand{\arraystretch}{1.4}
+		\begin{tabular}{c|l|l}
+			\hline
+			Copula family & $\varrho (\theta)$ or $\varrho (\rho)$ & $\varrho^{-1}(\hat{\beta})$ \\
+			\hline
+			\hline
+			Gaussian & $\beta=\frac{2}{\pi} \arcsin (\rho)$ & $\hat{\theta}_\beta =\sin(\hat{\beta}\frac{\pi}{2})$ \\
+			\hline
+			Students \textit{t}& $\beta=\frac{2}{\pi} \arcsin (\rho)$ & $\hat{\theta}_\beta =\sin(\hat{\beta}\frac{\pi}{2})$ \\
+			\hline
+			Clayton & $\beta = -1+4(2^{\theta +1}-1)^{-1 / \theta}$  & no closed \\
+			& & form expression\\
+			\hline
+			Gumbel & $\beta = -1+4\exp\left[ -\log(2) \cdot 2^{1/\theta} \right] $ &  $\hat{\theta}_\beta = -\frac{\log (2)}{\log \left(-\frac{\log (2)}{\log \left(\frac{\hat{\beta}+1}{4}\right)}\right)}$ \\
+			& & only for $\hat{\beta} \in \left[ 0,1 \right) $ \\
+			\hline
+			Frank & $\beta = \frac{4}{\theta}\log\cosh \frac{\theta}{4}$ & no closed  \\
+			& & form expression \\
+		\end{tabular}
+	}
+	\caption[Relationship functions and inverses for the inversion of Blomqvist's Beta]{Relationship functions for selected copulae and their inverses for the inversion of Blomqvist's Beta. For the Gaussian and t-copula, the dependence parameter is called $\rho$ and will, therefore be the argument of its function.}
+	\label{iBeta-rel-funcs}
+\end{table}
+
+
+\section{Copula selection strategy}
+
+So far I described the process of finding a suitable parameter for known data and a known copula. In real-world applications, however, the underlying or true copula is rarely, if ever, known so one needs a process that selects an appropriate copula from a given set of data $\left\lbrace x_{i1},x_{i2}\right\rbrace$ for $i = 1,\dots , n$. 
+
+In a first step the data needs to be transformed to the copula scale $u_{i1},u_{i2}\in \left[ 0,1 \right] $ via the probability integral transform. This can be done either via equation \ref{known-margins} for known margins or via equation \ref{emp-margins} for unknowns. In my simulation this step is skipped as I will derive the observations directly from a copula. 
+
+In the next step, the transformed data is fitted to every available copula as described in section \ref{est-methods}. This yields one parameter per copula per estimator. To now find the model with the best fit based upon the estimates, I use the Akaike Information Criterion (AIC) \citep{akaike1973information} defined as:
+
+\begin{equation}
+	\label{AIC}
+	AIC:=-2 \sum_{i=1}^{n} \log \left[c\left(u_{i1}, u_{i2} \mid \hat{\boldsymbol{\theta}}\right)\right]+2p,
+\end{equation}
+%
+with $p$ being the number of parameters; for this study $p = 1$ as only one-parameter copulae are estimated.
+
+Since both inversion methods do not depend on likelihood functions when estimating parameters, the AIC as a comparing selection criterion can only be used by plugging the inversion-estimates back into the log-likelihood function found for the maximum likelihood procedure. Thus, an AIC for every estimator can be obtained by setting:
+
+\begin{equation}
+	\label{estimators}
+	\hat{\boldsymbol{\theta}} := \left\{\begin{array}{lll}
+			\hat{\theta}_{n}^{ML} &, \text{for ML} \\
+			\delta^{-1}(\hat{\tau}) &, \text{for Kendall's Tau inversion}\\
+			\varrho^{-1}(\hat{\beta}) &, \text{for Blomqvist's Beta inversion}.
+	\end{array}\right.
+\end{equation}
+
+In a last step the copula with the smallest AIC value per estimator is selected. By means of the AIC, the so chosen model is the most parsimonious. 
+
+In this simulation I will record the relative computation time it takes for every estimator to select a copula from the data on the basis of AIC. I expect the inversion methods to be significantly faster than ML as they skip the optimization process (equation \ref{ml-estimation}) for ML, which is computationally challenging, especially with large sample sizes.

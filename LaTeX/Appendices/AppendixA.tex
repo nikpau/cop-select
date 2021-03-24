@@ -1,0 +1,96 @@
+% Appendix A
+
+\chapter{Appendix} % Main appendix title
+
+\label{AppendixA} % For referencing this appendix elsewhere, use \ref{AppendixA}
+
+
+\section{Proof of \ref{tau-copula}}
+
+In \ref{emp-kendall} we discussed an empirical version of Kendall's Tau. For this proof we use the population analogue, given by
+
+\begin{equation*}
+	\tau\left(X_{1}, X_{2}\right)=P\left[ \left(X_{11}-X_{21}\right)\left(X_{12}-X_{22}\right)>0\right] -P\left[ \left(X_{11}-X_{21}\right)\left(X_{12}-X_{22}\right)<0\right] ,
+\end{equation*}
+%
+where $(X_{11},X_{12})$ and $(X_{21},X_{22})$ are independent copies of $(X_1,X_2)$.
+%
+Now, based on 
+
+\begin{equation*}
+	P\left[ \left(X_{11}-X_{21}\right)\left(X_{12}-X_{22}\right)>0\right] =1-P\left[ \left(X_{11}-X_{21}\right)\left(X_{12}-X_{22}\right)<0\right],
+\end{equation*}
+%
+one can write $\tau=2 P\left(\left(X_{11}-X_{21}\right)\left(X_{12}-X_{22}\right)>0\right)-1$.
+%
+Furthermore, using 
+
+\begin{equation*}
+	{\scriptstyle P\left[ \left(X_{11}-X_{21}\right)\left(X_{12}-X_{22}\right)>0\right] =P\left(X_{11}>X_{21}, X_{12}>X_{22}\right)+P\left(X_{11}<X_{21}, X_{12}<X_{22}\right)}
+\end{equation*}
+%
+and the transformation $u_{1}:=F_{1}\left(x_{1}\right)$ and $u_{2}:=F_{2}\left(x_{2}\right)$ one obtains:
+
+\begin{equation*}
+	\begin{aligned}
+		P\left(X_{11}>X_{21}, X_{12}>X_{22}\right) &=P\left(X_{21}<X_{11}, X_{22}<X_{12}\right) \\
+		&=\int_{-\infty}^{\infty} \int_{-\infty}^{\infty} P\left(X_{21}<x_{1}, X_{22}<x_{2}\right) d C\left(F_{1}\left(x_{1}\right), F_{2}\left(x_{2}\right)\right) \\
+		&=\int_{-\infty}^{\infty} \int_{-\infty}^{\infty} C\left(F_{1}\left(x_{1}\right), F_{2}\left(x_{2}\right)\right) d C\left(F_{1}\left(x_{1}\right), F_{2}\left(x_{2}\right)\right) \\
+		&=\int_{0}^{1} \int_{0}^{1} C\left(u_{1}, u_{2}\right) d C\left(u_{1}, u_{2}\right).
+	\end{aligned}
+\end{equation*}
+%
+The same can be shown for 
+
+\begin{equation*}
+		P\left(X_{11}<X_{21}, X_{12}<X_{22}\right)=\int_{0}^{1} \int_{0}^{1}\left[1-u_{1}-v_{1}+C\left(u_{1}, u_{2}\right)\right] d C\left(u_{1}, u_{2}\right),
+\end{equation*}
+%
+and as $C$ is the distribution function of $U_j := F_j(X_j)$ for $j = 1,2$ with mean $1/2$ one obtains
+
+\begin{equation*}
+	\begin{aligned}
+		P\left(X_{11}<X_{21}, X_{12}<X_{22}\right) &=1-\frac{1}{2}-\frac{1}{2}+\int_{0}^{1} \int_{0}^{1} C\left(u_{1}, u_{2}\right) d C\left(u_{1}, u_{2}\right) \\
+		&=\int_{0}^{1} \int_{0}^{1} C\left(u_{1}, u_{2}\right) d C\left(u_{1}, u_{2}\right)
+	\end{aligned}.
+\end{equation*}
+%
+Therefore, 
+
+\begin{equation}
+	\tau=-1+4 \int_{[0,1]^{2}} C\left(u_{1}, u_{2}\right) \mathrm{d} C\left(u_{1}, u_{2}\right).
+\end{equation}
+
+\section{Proof of \ref{beta-copula}}
+
+This proof is taken from \citet{genest2013copula}, but also repeated here for completeness. For two random variables $X$ and $Y$ with their respective medians $\tilde{X}$ and $\tilde{Y}$, Blomqvist's Beta is given by 
+
+\begin{equation*}
+	\beta=P\{(X-\tilde{X})(Y-\tilde{Y})>0\}-P\{(X-\tilde{X})(Y-\tilde{Y})<0\} .
+\end{equation*}
+%
+From this we can directly show that
+
+\begin{equation*}
+	\begin{split}
+		P\{(X-\tilde{X})(Y-\tilde{Y})>0\}&=P(X-\tilde{X}>0, Y-\tilde{Y}>0)+P(X-\tilde{X}<0, Y-\tilde{Y}<0) \\
+		&= P(X<\tilde{X},Y<\tilde{Y}) + P(X>\tilde{X},Y>\tilde{Y}) 
+	\end{split}
+\end{equation*}
+%
+and by using the properties of the median
+
+\begin{equation*}
+	P(X>\tilde{X}, Y>\tilde{Y})=P(X<\tilde{X}, Y<\tilde{Y})
+\end{equation*}
+%
+and
+
+\begin{equation*}
+	P\{(X-\tilde{X})(Y-\tilde{Y})>0\} = 1- P\{(X-\tilde{X})(Y-\tilde{Y})<0\}
+\end{equation*}
+it becomes evident that using Sklar's theorem in \ref{sklar} we archive the Copula representation
+
+\begin{equation}
+	\beta =4 C\left(\frac{1}{2}, \frac{1}{2}\right) -1
+\end{equation}
